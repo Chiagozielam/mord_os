@@ -6,6 +6,8 @@ This OS mimicks part of the windows OS with very minimal features but an intuiti
 - run `npm install` to install the dependencies
 - run `npm start` to start the app.
 
+or just visit (https://mymordos.netlify.app/)[https://mymordos.netlify.app/] for the live app
+
 ## Issues
 - Because of time constraint I wasn't able to work on the file system throughly so I had to remove it entirely.
 - We have minimal applications in the OS, but since we have a structure, it's easier to add more.
