@@ -1,12 +1,24 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import { BrowserRouter as Router } from 'react-router-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import AuthProvider from './context/auth/auth.provider'
+import AccountProvider from './context/account/account.provider'
+import MemoryProvider from './context/memory/memory.provider'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <AuthProvider>
+      <AccountProvider>
+        <MemoryProvider>
+          <Router>
+            <App />
+          </Router>
+        </MemoryProvider>
+      </AccountProvider>
+    </AuthProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );
